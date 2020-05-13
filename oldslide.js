@@ -1,5 +1,5 @@
 
-/* 
+/*
 
 #start -> start -> con_1       [1]
 #players -> players -> con_2   [2]
@@ -14,6 +14,7 @@ var isred = false;
 var isyellow = false;
 
 $(function(){
+    console.log('it works!');
    if(isblue === false && isred === false && isyellow === false){
        $('#players').bind('click', function(event){
           $('.con_1').stop().animate({
@@ -24,22 +25,22 @@ $(function(){
           }, speed);
           $('.con_3').stop().animate({
               marginLeft: "0vw"
-          }, speed);   
+          }, speed);
        });
        $('#partners').bind('click', function(event){
            $('.con_1').stop().animate({
-              marginLeft: "-100vw" 
+              marginLeft: "-100vw"
            }, speed);
            $('.con_2').stop().animate({
                marginLeft: "-100vw"
            }, speed);
            $('.con_3').stop().animate({
-              marginLeft: "0vw" 
+              marginLeft: "0vw"
            }, speed);
        });
        $('#kontakt').bind('click', function(event){
           $('.con_1').stop().animate({
-              marginLeft: "-100vw" 
+              marginLeft: "-100vw"
            }, speed);
            $('.con_2').stop().animate({
                marginLeft: "-100vw"
@@ -48,17 +49,17 @@ $(function(){
                marginLeft: "-100vw"
            }, speed);
        });
-       
+
        $('#start').bind('click', function(event){
           $('.con_3').stop().animate({
               marginLeft: "0vw"
           }, speed);
           $('.con_2').stop().animate({
               marginLeft: "0vw"
-          }, speed);  
+          }, speed);
           $('.con_1').stop().animate({
               marginLeft: "0vw"
-          }, speed); 
+          }, speed);
        });
    }
 });
