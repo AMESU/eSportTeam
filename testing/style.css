@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+a:active {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:empty {
+    text-decoration: none;
+    color: white;
+}
+
+a:any-link {
+    text-decoration: none;
+    color: white;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'open-sans', sans-serif;
+}
+
+.future {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    -ms-flex-direction: row;
+    -o-flex-direction: row;
+    flex-direction: row;
+
+}
+
+.el {
+    width: 25%;
+    height: 100%;
+    margin-left: 0.2%;
+    margin-right: 0.2%;
+    position: relative;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    -o-flex-direction: column;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.el:nth-of-type(1) {
+    background: url('images/img%20(1).jpg') center;
+    background-size: cover;
+}
+
+.el:nth-of-type(2) {
+    background: url('images/img%20(2).jpg') center;
+    background-size: cover;
+}
+
+.el:nth-of-type(3) {
+    background: url('images/img%20(3).jpg') center;
+    background-size: cover;
+}
+
+.el:nth-of-type(4) {
+    background: url('images/img%20(4).jpg') center;
+    background-size: cover;
+}
+
+.el::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: rgba(0, 149, 0, 0.5);
+    position: absolute;
+    webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+.el:nth-of-type(2) {
+    margin-left: 0.2%;
+    margin-right: 0.2%;
+}
+
+.el:nth-of-type(3) {
+    margin-left: 0.2%;
+    margin-right: 0.2%;
+}
+
+.el h2 {
+    width: inherit;
+    font-size: 2em;
+    margin-top: 80%;
+    color: aliceblue;
+    text-align: center;
+    z-index: 999;
+}
+
+.el:hover::after ~ .el::after{
+    display: none;
+}
+
+.el p {
+    width: 100%;
+    height: 20%;
+    bottom: 0;
+    text-align: center;
+}
+
+.el h3 {
+    width: 100%;
+    height: 20%;
+
+}
+
+.el .description {
+    text-align: center;
+    color: rgb(216, 216, 216);
+    box-shadow: 0 -5px 12px rgba(160, 160, 160, 0.42), 0 3px 3px rgba(162, 162, 162, 0.3);
+    z-index: 999;
+    display: none;
+
+}

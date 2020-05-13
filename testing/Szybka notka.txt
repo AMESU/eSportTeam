@@ -1,0 +1,13 @@
+Folder s³u¿y do testowania rozwi¹zañ 
+których obawiam siê testowaæ w projekcie g³ównym!
+
+========================================================
+
+Pomys³ na aplikacjê która wspiera w dzia³aniu: 
+Prosta aplikacja która u³atwia utworzenie plików
+niezbêdnych do tworzenia strony!
+
+==============================================================
+
+MSF_CREATOR;
+
